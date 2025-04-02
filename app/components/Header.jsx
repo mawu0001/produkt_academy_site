@@ -1,4 +1,4 @@
-"use client"; // This is a client-side component
+"use client";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -35,82 +35,39 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="mb-16 w-full flex place-items-center place-content-between">
-      <Link href="/">
-        <Image
-          src="/img/gastrotools_logo_horizontal_positive_rgb.png"
-          width={160}
-          height={90}
-          alt="logo"
-        />
-      </Link>
-      <nav className="flex flex-row place-content-between w-2/3">
-        <Link href="/brandpage" className="hover:font-bold">
-          Brand
+    <header>
+      <div className="bg-[#252522] h-10"></div>
+      <div className="mb-16 w-full flex place-items-center place-content-between">
+        <Link href="/">
+          <Image
+            src="/img/gastrotools_logo_horizontal_positive_rgb.png"
+            width={160}
+            height={90}
+            alt="logo"
+          />
         </Link>
+        <nav className="flex flex-row place-content-evenly w-2/3">
+          <Link href="/brandpage" className="hover:font-bold">
+            Brand
+          </Link>
 
-        {categories.length > 0 ? (
-          categories.map((category, index) => (
-            <Link
-              key={index}
-              href={`/produktserie/${category.slug.toLowerCase()}`}
-              className="hover:font-bold"
-            >
-              {category.title}
-            </Link>
-          ))
-        ) : (
-          <p>Loading...</p>
-        )}
-      </nav>
+          {categories.length > 0 ? (
+            categories.map((category, index) => (
+              <Link
+                key={index}
+                href={`/produktserie/${category.slug.toLowerCase()}`}
+                className="hover:font-bold"
+              >
+                {category.title}
+              </Link>
+            ))
+          ) : (
+            <p>Loading...</p>
+          )}
+        </nav>
+      </div>
     </header>
   );
 };
 
 export default Header;
-
-// import Image from "next/image";
-// import Link from "next/link";
-
-// const Header = () => {
-//   return (
-//     <header className="mb-16 w-full flex place-items-center place-content-between ">
-//       <Link href="/">
-//         <Image
-//           src="/img/gastrotools_logo_horizontal_positive_rgb.png"
-//           width={160}
-//           height={90}
-//           alt="logo"
-//         />
-//       </Link>
-//       <nav className="flex flex-row place-content-between w-2/3">
-//         <Link href="/brandpage" className="hover:font-bold">
-//           Brand
-//         </Link>
-//         <Link href="/produktserie" className="hover:font-700">
-//           Carbonstål
-//         </Link>
-//         <Link href="/" className="hover:font-bold">
-//           5-ply
-//         </Link>
-//         <Link href="/" className="hover:font-bold">
-//           Køkkenknive
-//         </Link>
-//         <Link href="/" className="hover:font-bold">
-//           Bagestål
-//         </Link>
-//         <Link href="/" className="hover:font-bold">
-//           Stegeplade
-//         </Link>
-//         <Link href="/" className="hover:font-bold">
-//           Forklæder
-//         </Link>
-//         <Link href="/" className="hover:font-bold">
-//           Tilbehør
-//         </Link>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default Header;

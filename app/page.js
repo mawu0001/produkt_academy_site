@@ -6,18 +6,18 @@ export default function Homepage() {
   return (
     <main className="w-full">
       <section className="w-full">
-        <h1>Gastrotools Product Academy</h1>
-        <div className="flex gap-4 place-items-end">
+        <h1 className="mb">Gastrotools Product Academy</h1>
+        <div className="flex gap-4 place-items-center">
           <div className="gap-y-4 flex flex-col">
             <Link href="/brandpage">
               <h4 className="text-sm">Brand & Misson → </h4>
             </Link>
             <p className="max-w-prose">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat.{" "}
+              Vi er på en mission om at give hjemmekokke værktøjerne til bedre
+              madlavning. Både i form af køkkenværktøjer i professionel
+              kvalitet, men også gennem det omfattende Gastro Studio med masser
+              af læring, underholdning og inspiration til bedre madlavning. Vi
+              er glade for, at du vil lave mad med os.
             </p>
           </div>
           <iframe
