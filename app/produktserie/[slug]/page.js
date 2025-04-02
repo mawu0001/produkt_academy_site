@@ -53,10 +53,10 @@ export default function ProductSeriesPage() {
     <main>
       <section>
         <h1>{data[currentVideoIndex]?.herotitel}</h1>
-        <p>{data[currentVideoIndex]?.description}</p>
+        <p>{data[currentVideoIndex]?.description1}</p>
+        {/* if til hvis der er indhold på description 2 ellers "" */}
         <Hero
           titel={data[currentVideoIndex]?.titel}
-          description={data[currentVideoIndex]?.description}
           youtubeUrl={data[currentVideoIndex]?.video}
           onChangeVideo={handleVideoChange}
           videoCount={data.length}

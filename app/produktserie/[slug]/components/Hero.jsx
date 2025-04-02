@@ -6,7 +6,6 @@ const Hero = ({ titel, youtubeUrl, onChangeVideo, videoCount }) => {
   return (
     <div className="hero-container">
       <div className="flex justify-between mb-4">
-        {/* ✅ Hide arrows if there is only one video */}
         {videoCount > 1 && (
           <div
             className="arrow left-arrow cursor-pointer text-3xl"

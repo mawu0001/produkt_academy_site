@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import CSVReader from "./components/CSVReader.jsx";
 
@@ -31,7 +30,7 @@ export default function Homepage() {
           />
         </div>
         <div className="mt-20">
-          <h4> Produkt & Produktserier</h4>
+          <h4 className="py-3"> Produkter</h4>
           <CSVReader />
         </div>
       </section>

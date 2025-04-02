@@ -3,7 +3,6 @@
 import Video from "./Video";
 
 const Gallery = ({ data, onVideoClick, currentVideoIndex }) => {
-  // ✅ If there's only one video, don't render the gallery at all
   if (data.length === 1) {
     return null;
   }

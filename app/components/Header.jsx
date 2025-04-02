@@ -36,14 +36,15 @@ const Header = () => {
 
   return (
     <header>
-      <div className="bg-[#252522] h-10"></div>
+      <div className="bg-[#252522] h-9"></div>
       <div className="mb-16 w-full flex place-items-center place-content-between">
         <Link href="/">
           <Image
             src="/img/gastrotools_logo_horizontal_positive_rgb.png"
-            width={160}
-            height={90}
+            width={180}
+            height={110}
             alt="logo"
+            className="cursor-pointer py-2"
           />
         </Link>
         <nav className="flex flex-row place-content-evenly w-2/3">

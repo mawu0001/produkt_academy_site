@@ -6,13 +6,12 @@ import Link from "next/link";
 const Thumbnail = ({ image, slug, titel }) => {
   return (
     <Link href={`/produktserie/${slug}`}>
-      <h4>{titel}</h4>
       <Image
         src={image}
-        width={300}
-        height={160}
+        width={320}
+        height={180}
         alt={"Thumbnail"}
-        className="cursor-pointer"
+        className="cursor-pointer rounded-lg hover:scale-110"
       />
     </Link>
   );
