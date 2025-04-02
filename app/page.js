@@ -20,7 +20,15 @@ export default function Homepage() {
               consequat.{" "}
             </p>
           </div>
-          <Image src="/img/ph1.png" width={640} height={360} alt="Thumbnail" />
+          <iframe
+            width="400"
+            height="220"
+            src="https://www.youtube.com/embed/wjGT5h1FPIA?si=xh1f0kEPSk-2eYHI"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="rounded-lg"
+          />
         </div>
         <div className="mt-20">
           <h4> Produkt & Produktserier</h4>

@@ -5,11 +5,14 @@ const Brandpage = () => {
     <main>
       <section>
         <h1>Gastrotools Brand & Mission</h1>
-        <Image
-          src="/img/brand_tn.webp"
-          width={1280}
-          height={720}
-          alt="Thumbnail"
+
+        <iframe
+          width="970"
+          height="547"
+          src="https://www.youtube.com/embed/wjGT5h1FPIA?si=xh1f0kEPSk-2eYHI"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
           className="rounded-lg"
         />
         <p>

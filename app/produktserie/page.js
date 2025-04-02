@@ -6,6 +6,7 @@ const Produktserie = () => {
     <main>
       <section>
         <Hero />
+        <h1>MIb mib</h1>
         <Gallery />
       </section>
     </main>
