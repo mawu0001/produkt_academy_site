@@ -5,8 +5,10 @@ const Brandpage = () => {
     <main>
       <section>
         <h1>Gastrotools Brand & Mission</h1>
-
-        <iframe
+        <video width="970" controls>
+          <source src="/sequencen_1.mp4" type="video/mp4" />
+        </video>
+        {/* <iframe
           width="970"
           height="547"
           src="https://www.youtube.com/embed/wjGT5h1FPIA?si=xh1f0kEPSk-2eYHI"
@@ -14,7 +16,7 @@ const Brandpage = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           className="rounded-lg"
-        />
+        /> */}
         <p>
           Vi er på en mission om at give hjemmekokke værktøjerne til bedre
           madlavning. Både i form af køkkenværktøjer i professionel kvalitet,
