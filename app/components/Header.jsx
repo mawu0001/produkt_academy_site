@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <header>
       <div className="bg-[#252522] h-9"></div>
-      <div className="mb-16 w-full flex place-items-center place-content-between">
+      <div className="mb-16 w-full flex items-center justify-between px-4">
         <Link href="/">
           <Image
             src="/img/gastrotools_logo_horizontal_positive_rgb.png"
@@ -47,25 +47,36 @@ const Header = () => {
             className="cursor-pointer py-2"
           />
         </Link>
-        <nav className="flex flex-row place-content-evenly w-2/3">
-          <Link href="/brandpage" className="hover:font-bold">
-            Brand
+        <div className="flex gap-x-4 relative">
+          <Link
+            href="/brandpage"
+            className="hover:underline hover:underline-offset-4 transition-all duration-200"
+          >
+            <h5>Brand</h5>
           </Link>
 
-          {categories.length > 0 ? (
-            categories.map((category, index) => (
-              <Link
-                key={index}
-                href={`/produktserie/${category.slug.toLowerCase()}`}
-                className="hover:font-bold"
-              >
-                {category.title}
-              </Link>
-            ))
-          ) : (
-            <p>Loading...</p>
-          )}
-        </nav>
+          <div className="relative group">
+            <button className="text-[#252522] cursor-pointer">
+              <h5 className="hover:underline hover:underline-offset-4">
+                Produkter
+              </h5>
+            </button>
+
+            <div className="absolute top-full  right-0 hidden group-hover:flex flex-col bg-[#FCFBF7] p-4 z-10 ">
+              {categories.length > 0 &&
+                categories.map((category, index) => (
+                  <Link
+                    key={index}
+                    href={`/produktserie/${category.slug.toLowerCase()}`}
+                  >
+                    <h5 className="hover:underline hover:underline-offset-4 py-1">
+                      {category.title}
+                    </h5>
+                  </Link>
+                ))}
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );

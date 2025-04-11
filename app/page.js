@@ -19,18 +19,15 @@ export default function Homepage() {
               er glade for, at du vil lave mad med os.
             </p>
           </div>
-          <video width="400" controls className="rounded-lg">
-            <source src="/sequencen_1.mp4" type="video/mp4" />
-          </video>
-          {/* <iframe
-            width="400"
-            height="220"
-            src="https://drive.google.com/file/d/1JIswCJbMrd34pE75vsH-qw48jZqZGvNR/view?usp=sharing"
+          <iframe
+            width="560"
+            height="250"
+            src="https://www.youtube.com/embed/ltz40Q04UBo?si=fl-TmCLv2TwSSVfw"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="rounded-lg"
-          /> */}
+          ></iframe>
         </div>
         <div className="mt-20">
           <h4 className="py-3"> Produkter</h4>

@@ -54,7 +54,6 @@ export default function ProductSeriesPage() {
       <section>
         <h1>{data[currentVideoIndex]?.herotitel}</h1>
         <p>{data[currentVideoIndex]?.description1}</p>
-        {/* if til hvis der er indhold på description 2 ellers "" */}
         <Hero
           titel={data[currentVideoIndex]?.titel}
           youtubeUrl={data[currentVideoIndex]?.video}
