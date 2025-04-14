@@ -11,5 +11,5 @@ export function middleware(req) {
 }
 
 export const config = {
-  matcher: ["/forside", "/", "/login"],
+  matcher: ["/forside", "/", "/login", "/brandpage"],
 };

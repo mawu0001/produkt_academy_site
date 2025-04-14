@@ -29,53 +29,55 @@ const Login = () => {
   };
 
   return (
-    <main className="flex-col place-items-center h-full gap-16">
-      <div className="flex flex-row gap-6 place-items-center">
-        <Image
-          src="/img/gastrotools_symbol_positive_rgb.png"
-          width={80}
-          height={60}
-          alt="thumbnail"
-          className="cursor-pointer rounded-lg "
-        />
-        <h1>Login</h1>
-      </div>
-      <form
-        onSubmit={handleLogin}
-        className="flex flex-col gap-6 place--center mb-32"
-      >
-        <div className="flex flex-wrap place-content-evenly gap-4">
-          <label htmlFor="username">Brugernavn:</label>
-          <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            placeholder=" Brugernavn"
-            required
-            className="border-solid border rounded-sm"
+    <main className="pt-60">
+      <section className="flex-col place-items-center h-full gap-16">
+        <div className="flex flex-row gap-6 place-items-center">
+          <Image
+            src="/img/gastrotools_symbol_positive_rgb.png"
+            width={80}
+            height={60}
+            alt="thumbnail"
+            className="cursor-pointer rounded-lg "
           />
+          <h1>Login</h1>
         </div>
-        <div className="flex flex-wrap place-content-evenly gap-4">
-          <label htmlFor="password">Adgangskode:</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder=" Adgangskode"
-            required
-            className="border-solid border rounded-sm"
-          />
-        </div>
-        {error && <p>{error}</p>}
-        <button
-          type="submit"
-          className="cursor-pointer place-self-center border border-solid w-fit py-2 px-4 rounded-3xl  hover:bg-black-10"
+        <form
+          onSubmit={handleLogin}
+          className="flex flex-col gap-6 place--center mb-32"
         >
-          Log ind
-        </button>
-      </form>
+          <div className="flex flex-wrap place-content-between gap-4">
+            <label htmlFor="username">Brugernavn:</label>
+            <input
+              type="text"
+              id="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder=" Brugernavn"
+              required
+              className="border-solid border rounded-sm"
+            />
+          </div>
+          <div className="flex flex-wrap place-content-between gap-4">
+            <label htmlFor="password">Adgangskode:</label>
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder=" Adgangskode"
+              required
+              className="border-solid border rounded-sm"
+            />
+          </div>
+          {error && <p>{error}</p>}
+          <button
+            type="submit"
+            className="cursor-pointer place-self-center border border-solid w-fit py-2 px-4 rounded-3xl  hover:bg-black-10"
+          >
+            Log ind
+          </button>
+        </form>
+      </section>
     </main>
   );
 };

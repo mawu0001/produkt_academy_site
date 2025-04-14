@@ -35,7 +35,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="">
+    <header>
       <div className="bg-[#252522] h-9"></div>
       <div className="mb-16 w-full flex items-center justify-between px-12">
         <Link href="/forside">
