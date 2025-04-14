@@ -4,7 +4,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Hero = ({ titel, youtubeUrl, onChangeVideo, videoCount }) => {
   return (
-    <div className="hero-container mt-8">
+    <div className="hero-container mt-8.5">
       <div className="flex justify-between mb-4">
         {videoCount > 1 && (
           <div
