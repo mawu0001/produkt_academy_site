@@ -1,2 +1,0 @@
-const trustpilot_trustbox_settings = {"trustboxes":[],"activeTrustbox":0,"pageUrls":{"landing":"https://gastrotools-dk.myshopify.com","category":"https://gastrotools-dk.myshopify.com/collections/bestsellers","product":"https://gastrotools-dk.myshopify.com/products/brodkniv-21-cm"}};
-dispatchEvent(new CustomEvent('trustpilotTrustboxSettingsLoaded'));
