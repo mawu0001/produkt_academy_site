@@ -1,7 +1,5 @@
 "use client";
 
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-
 const Hero = ({ titel, youtubeUrl, onChangeVideo, videoCount }) => {
   return (
     <div className="hero-container mt-8.5">
@@ -12,7 +10,6 @@ const Hero = ({ titel, youtubeUrl, onChangeVideo, videoCount }) => {
             onClick={() => onChangeVideo("left")}
           >
             <span className="flex place-items-center">
-              {/* <IoIosArrowBack />  */}
               <h4> &larr; Forrige video</h4>
             </span>
           </div>
@@ -25,8 +22,6 @@ const Hero = ({ titel, youtubeUrl, onChangeVideo, videoCount }) => {
           >
             <span className="flex place-items-center">
               <h4>Næste video &rarr;</h4>
-
-              {/* <IoIosArrowForward /> */}
             </span>
           </div>
         )}
@@ -39,6 +34,8 @@ const Hero = ({ titel, youtubeUrl, onChangeVideo, videoCount }) => {
         title={titel}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
+        controls="0"
+        mute="1"
         className="rounded-lg"
       ></iframe>
     </div>

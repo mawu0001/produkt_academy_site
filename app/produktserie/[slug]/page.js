@@ -52,8 +52,8 @@ export default function ProductSeriesPage() {
   return (
     <main>
       <section>
-        <h1>{data[currentVideoIndex]?.herotitel}</h1>
-        <ul className="flex place-content-between">
+        <h1 className="text-center">{data[currentVideoIndex]?.herotitel}</h1>
+        <ul className="flex place-content-evenly">
           {data[currentVideoIndex]?.tags?.split(",").map((tag, i) => (
             <li key={i}>{tag.trim()}</li>
           ))}

@@ -2,8 +2,8 @@ import Papa from "papaparse";
 
 export const fetchCSVData = async (csvPath) => {
   try {
-    const response = await fetch(csvPath); // Load the CSV file
-    const csvText = await response.text(); // Convert response to text
+    const response = await fetch(csvPath);
+    const csvText = await response.text();
 
     return new Promise((resolve, reject) => {
       Papa.parse(csvText, {
