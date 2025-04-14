@@ -12,7 +12,7 @@ const nextConfig = {
       },
     ],
   },
-  output: "export",
+  output: "export", // Angiver eksport til statisk HTML
 };
 
 export default nextConfig;
