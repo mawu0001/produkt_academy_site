@@ -1,4 +1,5 @@
-@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
 
 @font-face {
   font-family: "SharpSans_Bold";
