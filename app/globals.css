@@ -69,6 +69,12 @@ p{
   font-size: 15px;
 }
 
+li{
+    font-family: "SharpSans_Bold" , sans-serif;
+    font-size: 14px
+
+}
+
 @media (min-width: 1024px) {
   section {
       max-width: 1000px;

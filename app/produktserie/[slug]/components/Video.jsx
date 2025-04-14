@@ -5,7 +5,7 @@ import Image from "next/image";
 const Video = ({ titel, poster, onClick }) => {
   return (
     <div className="relative w-full max-w-md mx-auto">
-      <h4>{titel}</h4>
+      {/* <h4>{titel}</h4> */}
 
       <Image
         src={poster}

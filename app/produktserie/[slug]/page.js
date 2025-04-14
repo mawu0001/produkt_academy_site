@@ -53,7 +53,12 @@ export default function ProductSeriesPage() {
     <main>
       <section>
         <h1>{data[currentVideoIndex]?.herotitel}</h1>
-        <p>{data[currentVideoIndex]?.description1}</p>
+        <ul className="flex place-content-between">
+          {data[currentVideoIndex]?.tags?.split(",").map((tag, i) => (
+            <li key={i}>{tag.trim()}</li>
+          ))}
+        </ul>
+        <p className="text-center">{data[currentVideoIndex]?.description1}</p>
         <Hero
           titel={data[currentVideoIndex]?.titel}
           youtubeUrl={data[currentVideoIndex]?.video}

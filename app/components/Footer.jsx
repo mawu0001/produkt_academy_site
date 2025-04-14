@@ -3,10 +3,13 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#252525] text-[#FCFBF7]">
+    <footer className="bg-[#252525] text-[#FCFBF7] px-12 pt-4">
       <nav className="flex place-content-between">
-        <div>
+        <div className="flex flex-col place-self-end">
           <Link href="https://www.gastrotools.dk/"> Gastrotools.dk</Link>
+          <Link href="https://www.gastrotools.dk/blogs/gastrostudio">
+            Gastro Studio
+          </Link>
         </div>
         <div>
           <h4>Gastrotools</h4>
@@ -19,16 +22,13 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <div className="text-[#FCFBF7]">
+        <div className="flex flex-col place-self-end">
           <h4>Kontakt os:</h4>
           <p> info@gastrotools.dk</p>
           <p>+45 71 99 51 70</p>
         </div>
       </nav>
-      <div
-        className="text-xs flex place-content-center
-"
-      >
+      <div className="text-xs flex place-content-center">
         © Gastrotools.dk 2025 - CVR: 38129791 - Baggesensgade 4C, 2. sal, 2200
         København N, Denmark
       </div>

@@ -35,10 +35,10 @@ const Header = () => {
   }, []);
 
   return (
-    <header>
+    <header className="">
       <div className="bg-[#252522] h-9"></div>
-      <div className="mb-16 w-full flex items-center justify-between px-4">
-        <Link href="/">
+      <div className="mb-16 w-full flex items-center justify-between px-12">
+        <Link href="/forside">
           <Image
             src="/img/gastrotools_logo_horizontal_positive_rgb.png"
             width={180}
