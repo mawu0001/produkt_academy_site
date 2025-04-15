@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#252525] text-[#FCFBF7] px-12 pt-12 pb-4">
+    <footer className="bg-[#252525] text-[#FCFBF7] px-12 pt-12 pb-4 ">
       <nav className="flex place-content-between pb-12">
         <div className="flex flex-col place-self-end">
           <Link href="https://www.gastrotools.dk/"> Gastrotools.dk</Link>

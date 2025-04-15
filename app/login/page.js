@@ -37,7 +37,7 @@ const Login = () => {
             width={80}
             height={60}
             alt="thumbnail"
-            className="cursor-pointer rounded-lg "
+            className="cursor-pointer rounded-lg"
           />
           <h1>Login</h1>
         </div>
